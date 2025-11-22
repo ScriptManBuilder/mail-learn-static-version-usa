@@ -88,14 +88,13 @@ const Account: React.FC = () => {
   const testAccountCourses = products.map(product => {
     const courseVideos = [];
     
-    // Добавляем основное видео превью
-    if (product.video) {
-      courseVideos.push(product.video);
-    }
-    
-    // Добавляем дополнительные видео для премиум курсов
-    if (product.videos) {
+    // Если есть массив videos (для премиум курсов), используем его
+    if (product.videos && product.videos.length > 0) {
       courseVideos.push(...product.videos);
+    } 
+    // Иначе используем одно preview видео
+    else if (product.video) {
+      courseVideos.push(product.video);
     }
     
     return {
@@ -396,7 +395,10 @@ const Account: React.FC = () => {
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                           <span style={{ color: '#718096', fontSize: '0.95rem' }}>Duration</span>
                           <span style={{ fontWeight: '600', color: '#2d3748' }}>
-                            {course.id <= 4 ? '18-42 min' : course.id <= 7 ? '38-54 min' : '28-60 min'}
+                            {course.id <= 4 ? '2-6 min' : 
+                             course.id <= 7 ? '4-8 min' : 
+                             course.id <= 11 ? '8-12 min' : 
+                             course.id <= 14 ? '12-25 min' : '15-45 min'}
                           </span>
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>

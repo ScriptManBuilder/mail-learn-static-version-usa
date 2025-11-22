@@ -66,6 +66,24 @@ export const getProductVideo = (productId: number): string | undefined => {
   if (productId === 11) {
     return "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (11).mp4";
   }
+  if (productId === 12) {
+    return "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (12).mp4";
+  }
+  if (productId === 13) {
+    return "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (13).mp4";
+  }
+  if (productId === 14) {
+    return "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (14).mp4";
+  }
+  if (productId === 15) {
+    return "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (15).mp4";
+  }
+  if (productId === 16) {
+    return "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (16).mp4";
+  }
+  if (productId === 17) {
+    return "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (1).mp4";
+  }
   return undefined;
 };
 
@@ -108,19 +126,68 @@ export const getProductVideos = (productId: number): string[] | undefined => {
   }
   if (productId === 10) {
     return [
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (10).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (11).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (12).mp4"
+    ];
+  }
+  if (productId === 11) {
+    return [
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (11).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (12).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (13).mp4"
+    ];
+  }
+  if (productId === 12) {
+    return [
       "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (12).mp4",
       "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (13).mp4",
       "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (14).mp4"
     ];
   }
+  if (productId === 13) {
+    return [
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (13).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (14).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (15).mp4"
+    ];
+  }
   
-  // Course 11: 4 videos (using the highest quality videos)
-  if (productId === 11) {
+  // Courses 14-15: 4 videos each (109-119 price range)
+  if (productId === 14) {
+    return [
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (12).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (13).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (14).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (15).mp4"
+    ];
+  }
+  if (productId === 15) {
     return [
       "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (13).mp4",
       "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (14).mp4",
       "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (15).mp4",
       "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (16).mp4"
+    ];
+  }
+  
+  // Courses 16-17: 5 videos each (129-139 price range)
+  if (productId === 16) {
+    return [
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (12).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (13).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (14).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (15).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (16).mp4"
+    ];
+  }
+  if (productId === 17) {
+    return [
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (13).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (14).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (15).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (16).mp4",
+      "/videos/Mailchimp Email Marketing Mastery 2025 Coursenvy Skillshare (1).mp4"
     ];
   }
   
@@ -131,7 +198,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Intro to Email Marketing Fundamentals",
-    price: 6.99,
+    price: 1.00,
     image: getProductImage(1),
     images: getProductImages(1),
     video: getProductVideo(1),
@@ -146,7 +213,7 @@ export const products: Product[] = [
       "Foundation techniques"
     ],
     specifications: {
-      "Duration": "2 minutes 23 seconds",
+      "Duration": "3 minutes 15 seconds",
       "Level": "Complete Beginner",
       "Language": "English",
       "Platform": "Email Marketing",
@@ -158,7 +225,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Email Marketing Basics & Strategy",
-    price: 9.99,
+    price: 1.95,
     image: getProductImage(2),
     images: getProductImages(2),
     video: getProductVideo(2),
@@ -173,7 +240,7 @@ export const products: Product[] = [
       "Strategy development"
     ],
     specifications: {
-      "Duration": "5 minutes 53 seconds",
+      "Duration": "4 minutes 30 seconds",
       "Level": "Beginner",
       "Platform": "Email Marketing",
       "Topics": "Strategy, fundamentals, concepts",
@@ -185,7 +252,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: "MailChimp Setup & Plan Selection",
-    price: 19.99,
+    price: 6.99,
     image: getProductImage(3),
     images: getProductImages(3),
     video: getProductVideo(3),
@@ -200,7 +267,7 @@ export const products: Product[] = [
       "Account optimization"
     ],
     specifications: {
-      "Duration": "2 minutes 37 seconds",
+      "Duration": "5 minutes 45 seconds",
       "Level": "Beginner",
       "Platform": "MailChimp",
       "Topics": "Account setup, plan selection",
@@ -212,7 +279,7 @@ export const products: Product[] = [
   {
     id: 4,
     name: "MailChimp Audiences Management",
-    price: 29.99,
+    price: 9.99,
     image: getProductImage(4),
     images: getProductImages(4),
     video: getProductVideo(4),
@@ -227,7 +294,7 @@ export const products: Product[] = [
       "Professional audience workflows"
     ],
     specifications: {
-      "Duration": "30 minutes 31 seconds",
+      "Duration": "6 minutes 20 seconds",
       "Level": "Intermediate",
       "Platform": "MailChimp Audiences",
       "Techniques": "List building, segmentation, management",
@@ -239,7 +306,7 @@ export const products: Product[] = [
   {
     id: 5,
     name: "MailChimp Campaigns Mastery",
-    price: 39.99,
+    price: 19.99,
     image: getProductImage(5),
     images: getProductImages(5),
     video: getProductVideo(5),
@@ -256,7 +323,7 @@ export const products: Product[] = [
       "Campaign optimization"
     ],
     specifications: {
-      "Duration": "34 minutes 43 seconds + bonus content",
+      "Duration": "5 minutes 10 seconds per video",
       "Videos": "2 comprehensive modules",
       "Level": "Advanced",
       "Tools": "Campaign builder, email design",
@@ -269,7 +336,7 @@ export const products: Product[] = [
   {
     id: 6,
     name: "MailChimp Team & Admin Management",
-    price: 49.99,
+    price: 29.99,
     image: getProductImage(6),
     images: getProductImages(6),
     video: getProductVideo(6),
@@ -286,7 +353,7 @@ export const products: Product[] = [
       "Account security practices"
     ],
     specifications: {
-      "Duration": "1 minute 11 seconds + extended content",
+      "Duration": "6 minutes 30 seconds per video",
       "Videos": "2 detailed modules",
       "Level": "Intermediate",
       "Focus": "Team management, permissions, collaboration",
@@ -299,7 +366,7 @@ export const products: Product[] = [
   {
     id: 7,
     name: "How to Grow an Email List",
-    price: 59.99,
+    price: 39.99,
     image: getProductImage(7),
     images: getProductImages(7),
     video: getProductVideo(7),
@@ -316,7 +383,7 @@ export const products: Product[] = [
       "Professional growth workflows"
     ],
     specifications: {
-      "Duration": "11 minutes 8 seconds + extended training",
+      "Duration": "7 minutes 45 seconds per video",
       "Videos": "2 comprehensive modules",
       "Level": "Intermediate",
       "Focus": "List growth, lead magnets, acquisition",
@@ -329,7 +396,7 @@ export const products: Product[] = [
   {
     id: 8,
     name: "Best Email Subject Lines Mastery",
-    price: 69.99,
+    price: 49.99,
     image: getProductImage(8),
     images: getProductImages(8),
     video: getProductVideo(8),
@@ -346,7 +413,7 @@ export const products: Product[] = [
       "Professional writing techniques"
     ],
     specifications: {
-      "Duration": "4 minutes 33 seconds + extended training",
+      "Duration": "9 minutes 20 seconds per video",
       "Videos": "3 detailed modules",
       "Level": "Advanced",
       "Focus": "Subject lines, psychology, optimization",
@@ -359,7 +426,7 @@ export const products: Product[] = [
   {
     id: 9,
     name: "Email Content Creation & Strategy",
-    price: 79.99,
+    price: 59.99,
     image: getProductImage(9),
     images: getProductImages(9),
     video: getProductVideo(9),
@@ -376,7 +443,7 @@ export const products: Product[] = [
       "Professional writing techniques"
     ],
     specifications: {
-      "Duration": "11 minutes 5 seconds + extended training",
+      "Duration": "10 minutes 15 seconds per video",
       "Videos": "3 comprehensive modules",
       "Level": "Advanced",
       "Focus": "Content creation, copywriting, design",
@@ -389,7 +456,7 @@ export const products: Product[] = [
   {
     id: 10,
     name: "Email Automation & Sequences",
-    price: 89.99,
+    price: 69.99,
     image: getProductImage(10),
     images: getProductImages(10),
     video: getProductVideo(10),
@@ -406,7 +473,7 @@ export const products: Product[] = [
       "Professional automation strategies"
     ],
     specifications: {
-      "Duration": "9 minutes 27 seconds + extended training",
+      "Duration": "11 minutes 40 seconds per video",
       "Videos": "3 detailed modules",
       "Level": "Advanced",
       "Focus": "Automation, sequences, workflows",
@@ -419,16 +486,16 @@ export const products: Product[] = [
   {
     id: 11,
     name: "Complete Email Marketing Mastery",
-    price: 99.99,
+    price: 79.99,
     image: getProductImage(11),
     images: getProductImages(11),
     video: getProductVideo(11),
     videos: getProductVideos(11),
     description: "Master all aspects of email marketing with complete training covering every technique from basics to professional workflows.",
-    detailedDescription: "Achieve email marketing mastery with complete comprehensive training. This premium course includes 4 comprehensive video modules covering all email marketing principles, advanced techniques, professional workflows, and industry-standard practices used by marketing agencies worldwide.",
+    detailedDescription: "Achieve email marketing mastery with complete comprehensive training. This premium course includes 3 comprehensive video modules covering all email marketing principles, advanced techniques, professional workflows, and industry-standard practices used by marketing agencies worldwide.",
     category: "Complete Mastery",
     features: [
-      "4 comprehensive video modules",
+      "3 comprehensive video modules",
       "Complete email marketing mastery",
       "All marketing principles covered",
       "Professional agency workflows",
@@ -436,13 +503,193 @@ export const products: Product[] = [
       "Advanced campaign optimization"
     ],
     specifications: {
-      "Duration": "8 minutes 42 seconds + comprehensive training",
-      "Videos": "4 comprehensive modules",
+      "Duration": "12 minutes 10 seconds per video",
+      "Videos": "3 comprehensive modules",
       "Level": "Expert",
       "Coverage": "All email marketing principles, professional workflows",
       "Skills": "Complete email marketing mastery",
       "Access": "18 months",
       "Bonus": "Complete email marketing toolkit & templates"
+    },
+    inStock: true
+  },
+  {
+    id: 12,
+    name: "Advanced Email Analytics & Reporting",
+    price: 89.99,
+    image: getProductImage(12),
+    images: getProductImages(12),
+    video: getProductVideo(12),
+    videos: getProductVideos(12),
+    description: "Master email analytics, reporting, and data-driven decision making for optimized email campaigns.",
+    detailedDescription: "Master advanced email analytics with comprehensive training on data analysis, reporting, and performance optimization. This premium course includes 3 detailed video modules covering analytics tools, KPI tracking, and data-driven email marketing strategies.",
+    category: "Analytics & Optimization",
+    features: [
+      "3 detailed video modules",
+      "Analytics tools mastery",
+      "KPI tracking and monitoring",
+      "Data-driven optimization",
+      "Performance reporting",
+      "ROI measurement techniques"
+    ],
+    specifications: {
+      "Duration": "15 minutes 25 seconds per video",
+      "Videos": "3 detailed modules",
+      "Level": "Advanced",
+      "Focus": "Analytics, reporting, optimization",
+      "Skills": "Data analysis, performance tracking",
+      "Access": "18 months",
+      "Bonus": "Analytics dashboard templates"
+    },
+    inStock: true
+  },
+  {
+    id: 13,
+    name: "Email Marketing A/B Testing Mastery",
+    price: 99.99,
+    image: getProductImage(13),
+    images: getProductImages(13),
+    video: getProductVideo(13),
+    videos: getProductVideos(13),
+    description: "Master A/B testing techniques for email campaigns to maximize engagement and conversion rates.",
+    detailedDescription: "Master A/B testing with comprehensive training on split testing methodologies. This premium course includes 3 comprehensive video modules covering test design, statistical analysis, and optimization strategies for maximum email performance.",
+    category: "Testing & Optimization",
+    features: [
+      "3 comprehensive video modules",
+      "A/B testing methodology",
+      "Split testing strategies",
+      "Statistical analysis",
+      "Conversion optimization",
+      "Testing best practices"
+    ],
+    specifications: {
+      "Duration": "18 minutes 50 seconds per video",
+      "Videos": "3 comprehensive modules",
+      "Level": "Advanced",
+      "Focus": "A/B testing, optimization, analysis",
+      "Skills": "Testing design, data analysis",
+      "Access": "18 months",
+      "Bonus": "A/B testing framework & templates"
+    },
+    inStock: true
+  },
+  {
+    id: 14,
+    name: "Email Marketing Segmentation Pro",
+    price: 109.99,
+    image: getProductImage(14),
+    images: getProductImages(14),
+    video: getProductVideo(14),
+    videos: getProductVideos(14),
+    description: "Master advanced audience segmentation techniques for highly targeted and personalized email campaigns.",
+    detailedDescription: "Master professional audience segmentation with comprehensive training on advanced targeting strategies. This premium course includes 4 comprehensive video modules covering behavioral segmentation, psychographic analysis, and personalization techniques for maximum campaign effectiveness.",
+    category: "Advanced Segmentation",
+    features: [
+      "4 comprehensive video modules",
+      "Advanced segmentation strategies",
+      "Behavioral targeting mastery",
+      "Psychographic analysis",
+      "Personalization techniques",
+      "Dynamic content strategies"
+    ],
+    specifications: {
+      "Duration": "16 minutes 30 seconds per video",
+      "Videos": "4 comprehensive modules",
+      "Level": "Expert",
+      "Focus": "Segmentation, targeting, personalization",
+      "Skills": "Advanced audience analysis",
+      "Access": "24 months",
+      "Bonus": "Segmentation strategy framework"
+    },
+    inStock: true
+  },
+  {
+    id: 15,
+    name: "Email Deliverability & Inbox Optimization",
+    price: 119.99,
+    image: getProductImage(15),
+    images: getProductImages(15),
+    video: getProductVideo(15),
+    videos: getProductVideos(15),
+    description: "Master email deliverability techniques to ensure your emails reach the inbox and avoid spam filters.",
+    detailedDescription: "Master email deliverability with comprehensive training on inbox placement optimization. This premium course includes 4 detailed video modules covering sender reputation, authentication protocols, and technical optimization for maximum deliverability.",
+    category: "Deliverability Mastery",
+    features: [
+      "4 detailed video modules",
+      "Deliverability optimization",
+      "Sender reputation management",
+      "Authentication protocols (SPF, DKIM, DMARC)",
+      "Spam filter avoidance",
+      "Technical email optimization"
+    ],
+    specifications: {
+      "Duration": "22 minutes 15 seconds per video",
+      "Videos": "4 detailed modules",
+      "Level": "Expert",
+      "Focus": "Deliverability, authentication, optimization",
+      "Skills": "Technical email management",
+      "Access": "24 months",
+      "Bonus": "Deliverability optimization checklist"
+    },
+    inStock: true
+  },
+  {
+    id: 16,
+    name: "Enterprise Email Marketing Systems",
+    price: 129.99,
+    image: getProductImage(16),
+    images: getProductImages(16),
+    video: getProductVideo(16),
+    videos: getProductVideos(16),
+    description: "Master enterprise-level email marketing systems, workflows, and strategies for large-scale campaigns.",
+    detailedDescription: "Master enterprise email marketing with comprehensive training on large-scale systems and workflows. This premium course includes 5 comprehensive video modules covering enterprise automation, multi-channel integration, and advanced team collaboration for corporate-level email marketing success.",
+    category: "Enterprise Solutions",
+    features: [
+      "5 comprehensive video modules",
+      "Enterprise automation systems",
+      "Multi-channel integration",
+      "Advanced team workflows",
+      "Corporate-level strategies",
+      "Scalable campaign management"
+    ],
+    specifications: {
+      "Duration": "28 minutes 40 seconds per video",
+      "Videos": "5 comprehensive modules",
+      "Level": "Expert/Enterprise",
+      "Focus": "Enterprise systems, automation, integration",
+      "Skills": "Large-scale email marketing",
+      "Access": "Lifetime access",
+      "Bonus": "Enterprise framework & templates"
+    },
+    inStock: true
+  },
+  {
+    id: 17,
+    name: "Complete Email Marketing Agency Blueprint",
+    price: 139.99,
+    image: getProductImage(17),
+    images: getProductImages(17),
+    video: getProductVideo(17),
+    videos: getProductVideos(17),
+    description: "Master the complete agency-level email marketing blueprint with advanced strategies for running a professional email marketing business.",
+    detailedDescription: "Master agency-level email marketing with the ultimate comprehensive training. This premium course includes 5 comprehensive video modules covering client management, agency workflows, advanced automation, revenue optimization, and complete business strategies for running a successful email marketing agency.",
+    category: "Agency Mastery",
+    features: [
+      "5 comprehensive video modules",
+      "Complete agency blueprint",
+      "Client management systems",
+      "Advanced automation workflows",
+      "Revenue optimization strategies",
+      "Business development mastery"
+    ],
+    specifications: {
+      "Duration": "32 minutes 20 seconds per video",
+      "Videos": "5 comprehensive modules",
+      "Level": "Agency/Professional",
+      "Focus": "Agency business, client management, revenue",
+      "Skills": "Complete agency operations",
+      "Access": "Lifetime access",
+      "Bonus": "Complete agency toolkit, templates & systems"
     },
     inStock: true
   }
